@@ -1,0 +1,21 @@
+<div ng-form name="subform">
+	<label for="{{qtyfieldID}}">{{label}}</label>
+	<div class="{{customclass}} quantitychanger">
+		<button ng-click="changeQuantity('-')">{{removebutton || '-'}}</button>
+		<input id="{{qtyfieldID}}" ng-model="formattedValue" wheel-event
+			type="text"
+			name="quantity"
+			ng-focus="focusEvent($event)"
+			ng-blur="focusEvent($event)"
+			ng-keydown="keyboardEvent($event)"
+			ng-keyup="keyboardEvent($event)"
+			ng-change="checkFieldValue()" />
+		<input type="hidden" ng-model="ngModel">
+		<button ng-click="changeQuantity('+')">{{addbutton || '+'}}</button>
+	</div>
+	<div ng-if="subform.quantity.$dirty" ng-messages="subform.pwdcompare.$error" ng-messages-include="partials/validation_messages.html"></div>
+<pre><!-- only for testing, remove from production -->
+	model: {{ngModel}}
+	formattedValue : {{formattedValue}}
+</pre>
+</div>

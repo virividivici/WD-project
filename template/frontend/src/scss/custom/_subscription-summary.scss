@@ -1,0 +1,153 @@
+.subscription-summary {
+    .subscription-summary-wrapper {
+        padding-bottom: 60px;
+        h2 {
+            padding-top: 40px;
+            @include media-size('mobile') {
+                margin: 0 auto 25px auto;
+            }
+        }
+        h5 {
+            color: $mine-shaft;
+        }
+        .header-line-gap {
+            margin-top: 75px;
+            margin-bottom: 30px;
+            @include media-size('mobile') {
+                margin-top: 0px;
+                margin-bottom: 10px;
+            }
+        }
+        .telesales-row {
+            .telesales-field {
+                margin-bottom: 20px;
+            }
+            .fa-angle-up {
+                color: $deep-cerulean;
+            }
+        }
+        hr {
+            margin-top: 0;
+            border-top: 1px solid $alto;
+            @include media-size('mobile') {
+                margin-bottom: 20px;
+            }
+        }
+        .hr-total {
+            border-top: 1px solid $tundora;
+            margin: 15px auto 15px auto;
+            @include media-size('mobile') {
+                margin: 10px auto 15px auto;
+            }
+        }
+        .field-description {
+            color: $grey;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 14px;
+            word-wrap: break-word;
+        }
+        .product-row {
+            margin-bottom: 15px;
+            p {
+                margin-bottom: 0;
+            }
+            .product-name {
+                color: $deep-cerulean;
+                font-weight: bold;
+                .visible-xs {
+                    display: inline !important;
+                }
+                .fa-angle-down, 
+                .fa-angle-up {
+                    margin-left: 5px;
+                    color: $deep-cerulean;
+                }            
+            }
+            .product-type {
+                color: $grey;
+                font-size: 14px;
+            }
+            .product-info {
+                color: $grey;
+                font-style: italic;
+                font-size: 14px;
+                @include media-size('mobile') {
+                    margin-bottom: 0;
+                }
+
+            }
+            .product-price {
+                color: $tundora;
+            }
+            .glyphicon {
+                color: $mine-shaft;
+                @include media-size('mobile') {
+                    font-size: 20px;
+                }
+            }
+            .align-icon{
+                margin-top: 12px;
+            }
+            .right-divider {
+                border-right: 1px solid $alto;
+            }
+            @include media-size('mobile') {
+                a:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        .promo-code-row{
+            margin-top: 15px;
+            .field-description {
+                line-height: 16px;
+                margin-top: 8px;
+                word-wrap: break-word;
+            }
+        }
+        .total-row {
+            h5 {
+                margin-bottom: 0;
+                margin-top: 5px;
+                @include media-size('mobile') { 
+                    margin-top: 3px;
+                }
+            }
+            p {
+                margin-bottom: 0;
+            }
+            .total-note{
+                color: $grey;
+                font-size: 14px;
+                line-height: 16px;
+                margin-top: 10px;
+            }
+            .total-amount {
+                color: $tundora;
+                @include media-size('mobile') { 
+                    text-align: right;
+                    font-weight: bold;
+                }
+            }
+            .visible-xs {
+                @include media-size('mobile') { 
+                    display: inline !important;
+                }
+            }
+        }
+        .payment-terms {
+            @include media-size('mobile') {
+                margin-top: 20px;
+            }
+        }
+        .unavailable-subscription {
+            margin-bottom: 20px;
+            p {
+                margin-bottom: 0;
+            }
+        }
+
+    }
+}
+

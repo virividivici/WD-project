@@ -1,0 +1,41 @@
+/******************Key features module********************/
+
+.key-features-module {
+	background-color: $grey !important;
+	padding: 40px 0;
+	.horizontal-scroll-outer{
+		.img-responsive{
+			margin-left: auto;
+			margin-right: auto;
+		}
+		h2{
+			margin: 30px auto 10px;
+			color: $white;
+			text-align: center;
+			font-size: 20px;
+		}
+		p {
+			color: $white;
+			text-align: center;
+			padding: 0 30px;
+			margin: 0;
+			line-height: 20px;
+			@include media-size('tablet-landscape') {
+	            padding: 0;
+	        }
+	        @include media-size('mobile') {
+	            padding: 0 0 25px;
+	        }
+		}
+		.last-component{
+			p{
+				@include media-size('mobile') {
+					padding: 0;
+				}
+			}
+		}
+		@include media-size('mobile') {
+			width: inherit;
+		}
+	}
+}

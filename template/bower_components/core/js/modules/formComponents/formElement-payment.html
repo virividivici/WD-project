@@ -1,0 +1,23 @@
+<div ng-form name="subform">
+	<label for="{{paymentFieldID}}">{{label}}</label>
+	<div class="{{customclass}}">
+		<div>
+			<label>Name on card</label>
+			<input type="text" ng-model="ngModel.nameOnCard" placeholder="Name on card" />
+		</div>
+		<div class="{{cardtype}}">card type: {{cardtype}}</div>
+		<div>
+			<label>Card number</label>
+			<input type="text" name="cardnumber" id="{{paymentFieldID}}" ng-keydown="keyPress($event)" ng-model="ngModel.cardNumberFormatted" placeholder="Card number" />
+		</div>
+		<div ng-if="cardtype == 'amex'">
+			<label>Issue number</label>
+			<input type="text" ng-model="ngModel.issueNumber" placeholder="Issue number" />
+		</div>
+		<div>
+			<label>CVV</label>
+			<input type="text" ng-model="ngModel.cvv" placeholder="CVV" />
+		</div>
+	</div>
+	<div ng-if="subform.quantity.$dirty" ng-messages="subform.pwdcompare.$error" ng-messages-include="partials/validation_messages.html"></div><!-- TODO async validation -->
+</div>

@@ -1,0 +1,158 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$blank-name: 'blank';
+$blank-x: 0px;
+$blank-y: 0px;
+$blank-offset-x: 0px;
+$blank-offset-y: 0px;
+$blank-width: 30px;
+$blank-height: 30px;
+$blank-total-width: 88px;
+$blank-total-height: 84px;
+$blank-image: '../images/spritesheet.png';
+$blank: 0px 0px 0px 0px 30px 30px 88px 84px '../images/spritesheet.png' 'blank';
+$checkedCheckbox-name: 'checkedCheckbox';
+$checkedCheckbox-x: 61px;
+$checkedCheckbox-y: 0px;
+$checkedCheckbox-offset-x: -61px;
+$checkedCheckbox-offset-y: 0px;
+$checkedCheckbox-width: 27px;
+$checkedCheckbox-height: 27px;
+$checkedCheckbox-total-width: 88px;
+$checkedCheckbox-total-height: 84px;
+$checkedCheckbox-image: '../images/spritesheet.png';
+$checkedCheckbox: 61px 0px -61px 0px 27px 27px 88px 84px '../images/spritesheet.png' 'checkedCheckbox';
+$checkedRadioButton-name: 'checkedRadioButton';
+$checkedRadioButton-x: 61px;
+$checkedRadioButton-y: 27px;
+$checkedRadioButton-offset-x: -61px;
+$checkedRadioButton-offset-y: -27px;
+$checkedRadioButton-width: 25px;
+$checkedRadioButton-height: 25px;
+$checkedRadioButton-total-width: 88px;
+$checkedRadioButton-total-height: 84px;
+$checkedRadioButton-image: '../images/spritesheet.png';
+$checkedRadioButton: 61px 27px -61px -27px 25px 25px 88px 84px '../images/spritesheet.png' 'checkedRadioButton';
+$shoppingCartIcon-name: 'shoppingCartIcon';
+$shoppingCartIcon-x: 30px;
+$shoppingCartIcon-y: 0px;
+$shoppingCartIcon-offset-x: -30px;
+$shoppingCartIcon-offset-y: 0px;
+$shoppingCartIcon-width: 31px;
+$shoppingCartIcon-height: 29px;
+$shoppingCartIcon-total-width: 88px;
+$shoppingCartIcon-total-height: 84px;
+$shoppingCartIcon-image: '../images/spritesheet.png';
+$shoppingCartIcon: 30px 0px -30px 0px 31px 29px 88px 84px '../images/spritesheet.png' 'shoppingCartIcon';
+$unCheckedCheckbox-name: 'unCheckedCheckbox';
+$unCheckedCheckbox-x: 0px;
+$unCheckedCheckbox-y: 59px;
+$unCheckedCheckbox-offset-x: 0px;
+$unCheckedCheckbox-offset-y: -59px;
+$unCheckedCheckbox-width: 25px;
+$unCheckedCheckbox-height: 25px;
+$unCheckedCheckbox-total-width: 88px;
+$unCheckedCheckbox-total-height: 84px;
+$unCheckedCheckbox-image: '../images/spritesheet.png';
+$unCheckedCheckbox: 0px 59px 0px -59px 25px 25px 88px 84px '../images/spritesheet.png' 'unCheckedCheckbox';
+$unCheckedRadioButton-name: 'unCheckedRadioButton';
+$unCheckedRadioButton-x: 25px;
+$unCheckedRadioButton-y: 59px;
+$unCheckedRadioButton-offset-x: -25px;
+$unCheckedRadioButton-offset-y: -59px;
+$unCheckedRadioButton-width: 25px;
+$unCheckedRadioButton-height: 25px;
+$unCheckedRadioButton-total-width: 88px;
+$unCheckedRadioButton-total-height: 84px;
+$unCheckedRadioButton-image: '../images/spritesheet.png';
+$unCheckedRadioButton: 25px 59px -25px -59px 25px 25px 88px 84px '../images/spritesheet.png' 'unCheckedRadioButton';
+$userIcon-name: 'userIcon';
+$userIcon-x: 0px;
+$userIcon-y: 30px;
+$userIcon-offset-x: 0px;
+$userIcon-offset-y: -30px;
+$userIcon-width: 27px;
+$userIcon-height: 29px;
+$userIcon-total-width: 88px;
+$userIcon-total-height: 84px;
+$userIcon-image: '../images/spritesheet.png';
+$userIcon: 0px 30px 0px -30px 27px 29px 88px 84px '../images/spritesheet.png' 'userIcon';
+$userIconMobile-name: 'userIconMobile';
+$userIconMobile-x: 27px;
+$userIconMobile-y: 30px;
+$userIconMobile-offset-x: -27px;
+$userIconMobile-offset-y: -30px;
+$userIconMobile-width: 27px;
+$userIconMobile-height: 29px;
+$userIconMobile-total-width: 88px;
+$userIconMobile-total-height: 84px;
+$userIconMobile-image: '../images/spritesheet.png';
+$userIconMobile: 27px 30px -27px -30px 27px 29px 88px 84px '../images/spritesheet.png' 'userIconMobile';
+$spritesheet-width: 88px;
+$spritesheet-height: 84px;
+$spritesheet-image: '../images/spritesheet.png';
+$spritesheet-sprites: $blank $checkedCheckbox $checkedRadioButton $shoppingCartIcon $unCheckedCheckbox $unCheckedRadioButton $userIcon $userIconMobile;
+$spritesheet: 88px 84px '../images/spritesheet.png' $spritesheet-sprites;
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

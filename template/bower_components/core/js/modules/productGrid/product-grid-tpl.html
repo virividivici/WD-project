@@ -1,0 +1,6 @@
+<ul class="list-unstyled">
+    <li ng-repeat="product in products" ng-click="increment(product)" ng-init="product.clickCount=0" class="col-md-4 product">
+        <h2>{{ product.name }}</h2>
+        <p>Item click count: {{product.clickCount}}</p>
+    </li>
+</ul>

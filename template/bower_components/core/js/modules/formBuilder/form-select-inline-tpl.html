@@ -1,0 +1,22 @@
+<div class="form-inline error">
+
+    <div class="form-group">
+
+        <div class="selectWrap" >
+            <span class="input-lg whiteBackground" ng-class="{true : 'disabled', false : ''}[inputDisabled]">
+                {{selectedItem}}
+                <i aria-hidden="true" class="fa fa-angle-down"></i>
+            </span>
+            <select path="{{fieldPath}}" name="{{fieldName}}" id="{{fieldName}}" class="form-control input-lg" ng-model="inputFields" ng-options="k as v for (k,v) in items" ng-change="onUpdate({selectedItem: inputFields}); inlineAjaxFn({url: inlineAjaxUrl, value : inputFields});" ng-init="init(fieldValue)" inline-tsubmit="{{inlineSubmit}}" ng-required="{{fieldRequired}}" ng-disabled="inputDisabled" ng-hide="inputDisabled" ng-transclude>
+                <option value="0">{{fieldPlaceholder}}</option>
+            </select>
+        </div>
+
+    </div>
+    <p class="col-sm-5 error hidden">
+        <span aria-hidden="true" class="icon-Warningation"></span>
+            {{fieldErrorMessage}} {{fieldTitle}}
+            <!--   Please enter a valid {{fieldTitle}} -->
+    </p>
+
+</div>

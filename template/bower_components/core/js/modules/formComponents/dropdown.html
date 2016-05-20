@@ -1,0 +1,32 @@
+<!-- EASY HTML TO USE IN THE VIEW
+<div dropdown placeholder="Select your car" dlist="cars" selected="car" propertyname="name" propertyvaluename="value" staticversion="false" selectname="carname" errormessage="Please, select your car" required="yes">
+	<select>
+   		<option value="volvo">Volvo</option>
+   		<option value="saab">Saab</option>
+   		<option value="mercedes">Mercedes</option>
+    </select>
+</div>
+-->
+<div class="dropdown-container" ng-class="{ show: listVisible }"  ng-model="selected[propertyvaluename]" name="dropdown" required="">
+	<div class="dropdown-display" ng-click="show();" ng-class="{ clicked: listVisible }" >
+		<span ng-if="!isPlaceholder">{{display}}</span>
+		<span class="placeholder" ng-if="isPlaceholder">{{placeholder}}</span>
+		<i class="fa fa-angle-down"></i>
+	</div>
+	<div style="display:none" ng-transclude></div>
+	<div class="dropdown-list">
+		<div class="dropdown-list-cont">
+			<div ng-repeat="item in listItems" ng-click="select(item)" ng-class="{ selected: isSelected(item) }" >
+				<span>{{propertyname !== undefined ? item[propertyname] : item}}</span>
+				<i class="fa fa-check"></i>
+			</div>
+			<div style="display:none">
+				<select name="{{selectname}}">
+  					<option value="{{selected[propertyvaluename]}}"></option>
+				</select>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<div ng-if="showerror">{{errormessage}}</div>

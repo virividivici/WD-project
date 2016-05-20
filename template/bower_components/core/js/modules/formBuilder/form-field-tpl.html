@@ -1,0 +1,17 @@
+<div class="row" ng-class="{error: hasError==true }">
+
+    <div class="form-group">
+        <label for="{{fieldName}}">{{fieldTitle}}</label>
+        <span class="field-desc">&nbsp;{{fieldDesc}}</span>
+        <input path="{{fieldPath}}" type="{{formType}}" class="form-control input-lg" name="{{fieldName}}" id="{{fieldName}}" ng-model="inputFields" ng-init="init(fieldValue)" autocomplete="off" /> 
+    </div>
+
+    <p ng-if="!fieldCustomeErrorMessage" class="error" ng-class="{ hidden: hasError != true }">
+        <span aria-hidden="true" class="icon-Warningation"></span>
+        {{fieldErrorMessage}} {{fieldTitle}}
+    </p>
+    <p ng-if="fieldCustomeErrorMessage" class="error" ng-class="{ hidden: hasError != true }">
+        <span aria-hidden="true" class="icon-Warningation"></span>
+        {{fieldErrorMessage}}
+    </p>
+</div>

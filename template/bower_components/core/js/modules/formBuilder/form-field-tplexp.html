@@ -1,0 +1,19 @@
+<div class="row" ng-class="{error: hasError==true }">
+
+    <div class="form-group">
+        <label for="{{fieldName}}">{{fieldTitle}}</label>
+        <span class="field-desc">&nbsp;{{fieldDesc}}</span>
+        <input ng-blur="leaveInput()" class="form-control input-lg" autocomplete="off" value="{{fieldName}}"/> 
+    </div>
+
+    <p class="error" ng-if="!match" ng-class="{ hidden: hasError != true }">
+        <span aria-hidden="true" class="icon-Warningation"></span>
+        {{fieldErrorMessage}} {{fieldTitle}} 
+    </p>
+    <p class="error" ng-if="match" ng-class="{ hidden: hasError != true }">
+        <span aria-hidden="true" class="icon-Warningation"></span>
+        {{fieldTitle}} field doesn\'t match'
+    </p>
+
+</div>
+ 

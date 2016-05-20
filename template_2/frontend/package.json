@@ -1,0 +1,29 @@
+{
+  "name": "bcsg-ee",
+  "version": "1.11.0",
+  "description": "BCSG - EE Business Apps site",
+  "author": "BCSG",
+  "license": "Copyright",
+  "homepage": "https://businessapps.ee.co.uk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bcsgsvn/SaaS-Platform"
+  },
+  "bugs": {
+    "url": "https://bcsgsvn.atlassian.net/issues/?jql=project%3DEB"
+  },
+  "private": true,
+  "scripts": {
+    "pregetgems": "gem update --system",
+    "getgems": "gem install sass compass bootstrap-sass:3.2",
+    "start": "grunt"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-compass": "^1.0.4",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-newer": "^1.1.1"
+  }
+}

@@ -1,0 +1,16 @@
+<div class="row" ng-class="{error: hasError==true }">
+
+    <div class="form-group">
+        <label for="{{fieldName}}" class="date-label">{{fieldTitle}}</label>
+        <input type="text" class="form-control input-lg date-control" name="monthField" id="monthField" ng-model="monthField" autocomplete="off" size="2" maxlength="2" minlength="2"  ng-pattern="/^((0[1-9])|(1[0-2]))$/" placeholder="MM"/> -
+        <input type="text" class="form-control input-lg date-control" name="yearField" id="yearField" ng-model="yearField" autocomplete="off" size="4" maxlength="4" minlength="4"  ng-pattern="/^((2014)|(2020)|(2021)|(2022)|(2023)|(20[1-2][4-9]))$/" placeholder="YYYY"/>
+     
+       
+        <input path="{{fieldPath}}" type="hidden" name="{{fieldName}}" id="{{fieldName}}" ng-model="inputFields" ng-init="init(fieldValue)"  value="{{monthField+'-'+yearField}}" /> 
+    </div>
+
+    <p class="error" ng-class="{ hidden: hasError != true }">
+        <span aria-hidden="true" class="icon-Warningation"></span>
+        {{fieldErrorMessage}}
+    </p>
+</div>

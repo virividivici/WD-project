@@ -1,0 +1,6 @@
+<div ng-form name="subform" style="outline:1px dotted #aaa;margin:10px 0;">
+	<div>Custom template with some extra</div>
+	<label for="{{fieldID}}">{{label}}</label>
+	<input name="field" id="{{fieldID}}" ng-model="ngModel" class="{{customclass}}" placeholder="{{placeholder}}" />
+	<div ng-if="subform.field.$dirty" ng-messages="subform.field.$error" ng-messages-include="partials/validation_messages.html"></div>
+</div>

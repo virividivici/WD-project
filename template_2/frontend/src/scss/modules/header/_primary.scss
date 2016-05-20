@@ -1,0 +1,52 @@
+.primary {
+    background-color: $gray-darker;
+    height: 31px;
+
+    p,
+    a {
+        color: #fff;
+        display: inline-block;
+        letter-spacing: 0.6px;
+        font-weight: normal;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    a {
+        border-bottom: 1px solid $gray-darker;
+
+
+        &:hover {
+            color: $brand-light-text;
+            @include dotted-line(bottom, $brand-light-text);
+        }
+    }
+}
+
+.visit-ee {
+    margin-top: 1px;
+    position: relative;
+    padding-left: 0;
+
+
+    [class^="icon-"], [class*=" icon-"] {
+        font-size: 20px;
+        &:before{
+            vertical-align: middle;
+        }
+    }
+
+    @include until($screen-xs-max) {
+        margin-left: 15px;
+    }
+}
+
+.prop-login-out {
+    position: absolute;
+    right: 0;
+    top: 5px;
+
+    @include until($screen-xs-max) {
+        right: 16px;
+    }
+}

@@ -1,0 +1,140 @@
+/*
+
+    Override styles for tenant layout
+
+ */
+
+// Theme
+
+$ee-yellow: #ffe600;
+$ee-yellow-dark: #ecd400;
+$ee-yellow-light: #6d6e71;
+$ee-aqua: #007B85;
+//$ee-dark-aqua: #007e7d;#006C75
+$ee-dark-aqua: #006C75; //changed hover color for all primary buttons - 29/05/14
+
+$ee-darker-grey: #3c3d40;   // Backgrounds
+$ee-darker-grey-bold: #6e6d71; // Form headers
+$ee-dark-grey: #67686a;     // Headings
+$ee-light-grey: #d4d3cf;	// button shadows
+$ee-grey: #6d6e71;          // Mainly text colours
+$ee-oatmeal: #f6f4f0;
+$ee-oatmeal-darker: #e8e6e3;
+$ee-white: #fff;
+$ee-red: #e31010;
+$ee-red-darker: #b70505;
+$ee-red-light: #fdf7f7;
+$ee-green: #158f05;
+$ee-green-light: #f8fdf7;
+$ee-disabled-color:#cccccc;
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+$gray-darker-bold:      $ee-darker-grey-bold;
+$gray-darker:           $ee-darker-grey;
+$gray-dark:             $ee-dark-grey;
+$gray-light:            $ee-light-grey;
+$gray:                  $ee-grey;
+
+$brand-primary:         $ee-aqua;
+$brand-primary-darker:  $ee-dark-aqua;
+$brand-secondary:       $ee-yellow;
+$brand-secondary-darker:$ee-yellow-dark;
+$brand-light-text:      $ee-white;
+$brand-light-background:$ee-white;
+
+$brand-error:           $ee-red;
+$brand-error-darker:    $ee-red-darker;
+$brand-error-light:     $ee-red-light;
+$brand-success:         $ee-green;
+$brand-success-light:   $ee-green-light;
+$brand-notify:          $ee-yellow;
+$brand-notify-light:    $ee-yellow-light;
+
+$brand-bg:              $ee-oatmeal;
+$brand-bg-darker:       $ee-oatmeal-darker;
+$brand-disabled:		$ee-disabled-color;
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+//
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width:         24px;
+
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Small screen / tablet
+$container-tablet:             ((716px + $grid-gutter-width)) !default;
+// $container-tablet:             ((936px + $grid-gutter-width)) !default;
+//** For `$screen-sm-min` and up.
+$container-sm:                 $container-tablet !default;
+
+// Medium screen / desktop
+$container-desktop:            ((936px + $grid-gutter-width)) !default;
+//** For `$screen-md-min` and up.
+$container-md:                 $container-desktop !default;
+
+// Large screen / wide desktop
+$container-large-desktop:      ((1136px + $grid-gutter-width)) !default;
+// $container-large-desktop:      ((936px + $grid-gutter-width)) !default;
+//** For `$screen-lg-min` and up.
+$container-lg:                 $container-large-desktop !default;
+
+
+// Typography
+
+$font-family-sans-serif:  Arial, "Helvetica Neue", Helvetica, sans-serif;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif;
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-base:        $font-family-sans-serif;
+
+// $font-size-base:          14px;
+// $font-size-large:         ceil(($font-size-base * 1.25)); // ~18px
+// $font-size-small:         ceil(($font-size-base * 0.85)); // ~12px
+
+// $font-size-h1:            floor(($font-size-base * 2.6)); // ~36px
+// $font-size-h2:            floor(($font-size-base * 2.15)); // ~30px
+// $font-size-h3:            ceil(($font-size-base * 1.7)); // ~24px
+// $font-size-h4:            ceil(($font-size-base * 1.25)); // ~18px
+// $font-size-h5:            $font-size-base;
+// $font-size-h6:            ceil(($font-size-base * 0.85)); // ~12px
+
+
+$font-size-base:          10px;
+$font-size-large:         ceil(($font-size-base * 1.8)); // ~18px
+$font-size-small:         ceil(($font-size-base * 1)); // ~10px
+
+$font-size-h1:            floor(($font-size-base * 3.4)); // ~34px
+$font-size-h2:            floor(($font-size-base * 2)); // ~20px
+$font-size-h3:            ceil(($font-size-base * 1.6)); // ~16px
+$font-size-h4:            ceil(($font-size-base * 1.6)); // ~16px
+$font-size-h5:            ceil(($font-size-base * 1.6)); // ~16px
+$font-size-h6:            ceil(($font-size-base * 1.6)); // ~16px
+$font-size-p:             ceil(($font-size-base * 1.6)); // ~16px
+
+$line-height-base:        1; // 1
+$line-height-computed:    floor(($font-size-base * $line-height-base)); // ~10px
+
+$headings-font-family:    inherit;
+$headings-font-weight:    500;
+$headings-line-height:    1.1;
+$headings-color:          inherit;
+
+$font-primary-bold:         "EENobbleeBold";
+$font-primary-regular:      "EENobbleeRegular";
+$font-primary-light:        "EENobbleeLightRegular";
+
+$font-secondary-bold:       "ee_rubrik_semibold";
+$font-secondary-regular:    "ee_rubrik_regular";
+$font-secondary-light:      "ee_rubrik_light";
+
+$font-icons:       "EE";
+
+
+*{
+	font-family:$font-secondary-regular;
+}

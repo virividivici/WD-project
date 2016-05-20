@@ -1,0 +1,168 @@
+$grid-gutter-width: 24px;
+
+$font-primary-bold: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$font-primary-regular: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$font-primary-light: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+
+$font-secondary-bold: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$font-secondary-regular: MyraidProRegularFont;
+$font-secondary-light: MyraidProLightFont;
+
+/* Colours Franklin */
+
+$astral: #337AB7;
+$bay-of-many: #26567E;
+$black-squeeze: #F9FBFD;
+$black-pearl: #031c22;
+$boston-blue: #377bb5;
+$boulder: #777;
+$cadet-blue: #AEBAC4;
+$calypso: #376994;
+$dove-grey: #666;
+$dusty-grey: #999;
+$finn: #5E2750;
+$flamingo: #EE4F2F;
+$fun-green: #009933;
+$gallery: #f0f0f0;
+$mercury: #e1e1e1;
+$mexican-red: #ac2925;
+
+$monza: #E30917;
+$neon-carrot: #FF9933;
+$persian-red: #c9302c;
+$pomegranate: #EB3F1E;
+$red: #E60000;
+$regent-street-blue: #ADD5EA;
+$roman: #d9534f;
+$seance: #9C2AA0;
+$seashell: #f1f0f0;
+$silver: #ccc;
+$silver-chalice: #adadad;
+$spindle: #C1DAED;
+$steel-blue: #3C7BB1;
+$valencia: #d43f3a;
+$viking: #60c0dc;
+$wild-sand: #F4F4F4;
+
+/* Colors MTN */
+$alto: #dedede;
+$alto-dark: #d1d1d1;
+$black: #000;
+$deep-cerulean: #027fa3;
+$gallery: #eaeaea;
+$goldenrod: #ffd96b;
+$grey: #808080;
+$mtn-black: #272727;
+$mine-shaft: #373737;
+$mtn-yellow: #ffbe00;
+$tundora: #4b4b4b;
+$white: #fff;
+
+
+$color-bg-primary: $mtn-yellow;
+$color-bg-secondary: orange;
+$color-bg-tertiary: $dove-grey;
+
+$color-border-primary: $mine-shaft;
+$color-border-secondary: $mine-shaft;
+
+$color-font-primary: $tundora;
+$color-font-secondary: $mine-shaft;
+$color-font-tertiary: $dove-grey;
+
+$color-h1: $color-font-secondary;
+$color-h2: $color-font-secondary;
+$color-h3: $color-font-primary;
+$color-h4: $color-font-primary;
+$color-h5: $color-font-primary;
+
+$color-copy: $color-font-primary;
+$color-label: $color-font-primary;
+
+$color-link-primary: $mine-shaft;
+$color-link-hover-primary: $grey;
+$color-link-secondary: $white;
+$color-link-hover-secondary: $mtn-yellow;
+
+/* Buttons */
+$button-primary-bg-color: $color-bg-primary;
+$button-primary-bg-hover-color:  $goldenrod;
+$button-primary-font-color: $color-font-secondary;
+$button-primary-font-hover-color: $mine-shaft;
+$button-primary-border-color: $color-bg-primary;
+$button-primary-border-hover-color: $goldenrod;
+
+$button-secondary-bg-color: $white;
+$button-secondary-bg-hover-color: $silver;
+$button-secondary-font-color: $black;
+$button-secondary-font-hover-color: $black;
+$button-secondary-border-color: $silver;
+$button-secondary-border-hover-color: $dusty-grey;
+
+$button-tertiary-bg-color: $wild-sand;
+$button-tertiary-bg-hover-color: $silver;
+$button-tertiary-font-color: $black;
+$button-tertiary-font-hover-color: $black;
+$button-tertiary-border-color: $silver;
+$button-tertiary-border-hover-color: $dusty-grey;
+
+$button-error-bg-color: $roman;
+$button-error-bg-hover-color: $valencia;
+$button-error-font-color: $white;
+$button-error-font-hover-color: $white;
+$button-error-border-color: $persian-red;
+$button-error-border-hover-color: $mexican-red;
+
+/* Sizes */
+$font-h1-size: 36px;
+$font-h2-size: 26px;
+$font-h3-size: 20px;
+$font-h4-size: 18px;
+$font-h5-size: 18px;
+$font-copy-size: 16px;
+$font-copy-size-small: 14px;
+$font-label-size: 16px;
+$font-link-size: 16px;
+$font-fa-size: 20px;
+/* Screen size breakpoints - Used by media-size() mixin */
+$screen-xs-min: 320px;
+$screen-sm-min: 768px;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-md-min: 994px;
+$screen-sm-max: ($screen-md-min - 1);
+$screen-lg-min: 1188px;
+$screen-md-max: ($screen-lg-min - 1);
+$screen-xxl-breakout: 2000px;
+
+/* Dropdown style */
+$dropdown-color-placeholder: #AAA;
+$dropdown-container: 250px;
+$dropdown-height: 40px;
+$dropdown-font-size: 14px;
+$dropdown-padding-left: 10px;
+$dropdown-padding-right: 30px;
+$dropdown-lineheight: 40px !important;
+
+$dropdown-icon-width: 5px;
+$dropdown-icon-font-size: 2.5em;
+$dropdown-icon-font-weight: bold;
+$dropdown-icon-right-position: 26px;
+
+$dropdown-list-border-color: #DDD;
+$dropdown-list-border-width: 1px;
+$dropdown-list-icon-width: 20px;
+$dropdown-list-icon-marginleft: -5px;
+$dropdown-list-icon-margintop: 10px;
+$dropdown-list-height: 40px;
+$dropdown-list-lineheight: 40px !important;
+$dropdown-list-padding-right: 15px;
+$dropdown-list-width: 5px;
+$dropdown-list-margin-left: -5px;
+$dropdown-list-item-hover: $gallery;
+$dropdown-list-item-selected-background: #2875C7;
+$dropdown-list-item-selected-color: white;
+
+$form-feild-borer-colour: $cadet-blue;
+$form-feild-error-colour: $red;
+$form-feild-error-font-size: 14px;
+$form-feild-radius: 0;

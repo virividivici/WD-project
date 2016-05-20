@@ -1,0 +1,43 @@
+.invite-users {
+
+	h2 {
+		margin-top: 1.5em;
+	}
+	h3 {
+		margin-bottom: 0;
+	}
+	.invite-field {
+		margin-top: -20px;
+	}
+	.role-dropdown {
+		margin-top: -1px;
+
+		@media all and (device-width: $screen-sm) and (device-height: 1024px) and (orientation:portrait) {
+      padding-left: 0px;
+    }
+
+		.dropdown-menu {
+			border-radius: 0;
+		}
+	}
+    .removeUser {
+    	margin-top: 4px;
+    	.fa-times {
+	        font-size: 16px;
+	        font-weight: normal;
+	        padding-right: 5px;
+	    }
+	    @include media-size('mobile') {
+	    	margin-top: 15px;
+	    	margin-left: 15px;
+	    }
+    }
+    .caret {
+    	color: $grey;
+    }
+    .messageText{
+    	color: $red;
+    }
+
+
+}

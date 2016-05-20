@@ -1,0 +1,26 @@
+<div class="row">
+
+    <div class="form-group">
+
+        <label ng-if="fieldRequired == 'required' || fieldRequired == 'true'" for="{{fieldName}}">{{fieldTitle}} *</label>
+        <label ng-if="fieldRequired != 'required' && fieldRequired != 'true'" for="{{fieldName}}">{{fieldTitle}}</label>
+
+        <div class="selectWrap">
+            <span class="input-lg">
+                {{selectedItem}}
+                <i aria-hidden="true" class="fa fa-angle-down"></i>                
+            </span>
+            <select path="{{fieldPath}}" name="{{fieldName}}" id="{{fieldName}}" class="form-control input-lg" ng-model="inputFields" ng-options="k as v for (k,v) in items" ng-change="onUpdate({selectedItem: inputFields})" ng-init="init(fieldValue)" ng-required="{{fieldRequired}}" ng-transclude>
+                <option value="0">Please select</option>
+            </select>
+        </div>
+
+    </div>
+
+    <p class="error hidden">
+        <span aria-hidden="true" class="icon-Warningation"></span>
+            {{fieldErrorMessage}} {{fieldTitle}}
+            <!--   Please enter a valid {{fieldTitle}} -->
+    </p>
+
+</div>

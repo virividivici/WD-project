@@ -1,0 +1,178 @@
+/*
+	Tenant-specific styles
+
+	EE
+
+ */
+
+
+
+
+/*
+	Base variables & styling
+
+ */
+
+.tenant-ee {
+
+	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+		text-align: left;
+		font-family: $font-secondary-regular;
+		color: $gray;
+		margin: 0;
+
+		@include font-smoothing(on);
+
+		&.centerHeader{
+			text-align: center;
+			margin-top: 42px;
+			margin-bottom: 42px;
+		}
+
+		&.centerHeader_lowMargin{
+			text-align: center;
+			margin-top: 15px;
+			margin-bottom: 10px;
+		}
+	}
+
+
+	h1, .h1 {
+		// H1
+		font-size: $font-size-h1;
+		line-height: floor(($line-height-computed * 3.4)); // ~34px
+		font-family: $font-primary-light;
+		color: $gray-dark;
+		text-transform: uppercase;
+	}
+
+	h2, .h2 {
+		// H2
+		font-size: $font-size-h2;
+		line-height: floor(($line-height-computed * 2.5)); // ~25px
+		font-family: $font-secondary-regular;
+		color: $brand-primary;
+		letter-spacing: 0.8px;
+	}
+
+	h3, .h3 {
+		// Form headers
+		font-size: $font-size-h3;
+		line-height: floor(($line-height-computed * 2.4)); // ~24px
+		font-weight: bold;
+		color: $gray-darker-bold;
+		text-transform: none;
+
+		&:first-letter{
+			text-transform: capitalize;
+		}
+	}
+
+	h4, .h4 {
+		// App titles
+		font-size: $font-size-h4;
+		line-height: floor(($line-height-computed * 2.2)); // ~22px
+		font-family: $font-secondary-regular;
+		text-transform: none;
+	}
+
+	h5, .h5 {
+		// Lesser heading
+		font-size: $font-size-h5;
+		line-height: floor(($line-height-computed * 2.2)); // ~22px
+		text-transform: none;
+
+		&:first-letter {
+			text-transform: capitalize;
+		}
+	}
+
+	h6, .h6 {
+		// Lesser heading
+		font-size: $font-size-h6;
+		line-height: floor(($line-height-computed * 2.2)); // ~22px
+		text-transform: none;
+
+		&:first-letter {
+			text-transform: capitalize;
+		}
+	}
+
+
+	p {
+		// Lesser heading
+		font-family:$font-secondary-regular;
+		font-size: $font-size-p;
+		line-height: floor(($line-height-computed * 2.1)); // ~21px
+		color: $gray;
+
+		@include font-smoothing(on);
+
+		&.app-desc {
+			//font-family: $font-secondary-regular;
+		}
+
+		&:first-letter {
+			text-transform: capitalize;
+		}
+
+		&.light-on-dark {
+			color: $brand-light-text;
+		}
+
+		& + h3 {
+			margin-top: 16px;
+		}
+
+		& + p {
+			margin-top: 16px;
+		}
+	}
+
+
+	a {
+		font-size: $font-size-p;
+		line-height: floor(($line-height-computed * 2.1)); // ~21px
+		color: $brand-primary;
+		text-decoration: none;
+		font-weight: bold;
+
+		@include font-smoothing(on);
+
+		&:hover, &:focus {
+			color: $gray;
+			border-color: $gray;
+		}
+	}
+
+	.button-base {
+		border-bottom: 0;
+	}
+
+
+	// Forms
+	form {
+		h2 {
+			margin-bottom: 8px;
+		}
+
+		.form-group h2 {
+			margin-bottom: 0;
+		}
+	}
+
+
+	// style for tables first row
+	.row + .bt-row p:first-child {
+		margin-top: 0;
+	}
+
+	p.features {
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+
+	.bold {
+		font-weight:700;
+	}
+}

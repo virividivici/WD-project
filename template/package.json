@@ -1,0 +1,86 @@
+{
+  "name": "darwin-project-testprojectname",
+  "version": "1.0.0",
+  "application": {
+    "port": 8080,
+    "docrootFolder": "./csb/docroot",
+    "dependencies": {
+      "vendors": [
+       
+        "jquery-1.11.2.min",
+        "bootstrap.min"
+       
+      ],
+      "core": [       
+      
+       
+      ],
+      "project": [
+      
+        "service"
+       
+
+      ]
+    }
+  },
+  "description": "Darwin application unique instance.",
+  "scripts": {
+    "doc": "node ./node_modules/jsdoc/jsdoc.js -c ./config/doc/conf.json",
+    "pregetgems": "gem update --system",
+    "getgems": "gem install sass -v 3.4.10 && gem install compass -v 1.0.3 && gem install bootstrap-sass -v 3.2",
+    "testmodules": "grunt test",
+    "teste2e": "protractor config/testing/protractor_conf.js",
+    "test": "grunt test && protractor config/testing/protractor_conf.js",
+    "setproject": "node ./config/build/setproject.js",
+    "start": "node ./config/build/simpleserver.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/bcsgdev/darwin.git"
+  },
+  "keywords": [
+    "darwin",
+    "saas",
+    "platform"
+  ],
+  "homepage": "https://bitbucket.org/bcsgdev/darwin",
+  "author": "BCSG FE team",
+  "license": "Copyright",
+  "devDependencies": {
+    "bower":"",
+    "async":"",
+    "angular-mocks": "^1.3.7",
+    "chalk": "^0.5.1",
+    "glob": "^4.4.2",
+    "grunt": "^0.4.5",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-compass": "^1.0.1",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-cssmin": "^0.11.0",
+    "grunt-contrib-jasmine": "^0.8.1",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-html-build": "^0.4.1",
+    "grunt-spritesmith": "^3.6.1",
+    "grunt-svg-sprite": "^1.0.16",
+    "grunt-template-jasmine-istanbul": "^0.3.0",
+    "jsdoc": "^3.3.0-beta1",
+    "jshint-stylish": "^1.0.0",
+    "load-grunt-tasks": "^3.1.0",
+    "phantomjs": "^1.9.16",
+    "restify": "^2.8.5"
+  },
+  "dependencies": {
+    "bower":"",
+    "async":"",
+    "angular": "^1.3.11",
+    "angular-animate": "^1.3.11",
+    "angular-messages": "^1.3.11",
+    "angular-sanitize": "^1.3.11",
+    "bootstrap-sass": "3.2.0",
+    "font-awesome": "^4.3.0"
+  }
+}

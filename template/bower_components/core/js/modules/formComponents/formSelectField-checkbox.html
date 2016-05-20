@@ -1,0 +1,7 @@
+<div ng-form name="subform">
+	<label>{{label}}</label>
+	<label ng-repeat="option in optionList" class="{{customclass}}">
+		<input type="checkbox" name="field" ng-model="$parent.ngModel[option.el_key]" ng-required="{{required}}"> {{option.el_val}}
+	</label>
+	<div ng-if="subform.field.$dirty" ng-messages="subform.field.$error" ng-messages-include="partials/validation_messages.html"></div>
+</div>

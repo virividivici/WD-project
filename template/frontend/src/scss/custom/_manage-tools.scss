@@ -1,0 +1,111 @@
+.manage-tools {
+    h2 {
+        margin-top: 1.5em;
+    }
+    a:focus {
+        color: $tundora;
+    }
+    .xs-heading {
+        color: $tundora;
+        font-weight: bold;
+    }
+    .panel-heading {
+        padding: 0;
+        background-color: rgba(222, 222, 222, 0.3);
+        border-color: $alto;
+        .product-title {
+            display: inline-block;
+            padding: 10px 15px;
+            width: 100%;
+            &:after{
+                font-family: 'FontAwesome';
+                content: "\f106";
+                font-size: 20px;
+            }
+
+        }
+        .collapsed {; 
+            &:after{
+                font-family: 'FontAwesome';
+                content: "\f107";
+                font-size: 20px;
+            }
+        }
+    }
+    .no-apps{
+        height: 226px;
+        margin-top: 30px;
+        .no-apps-tile{
+            background-color: $grey;
+            padding: 30px 40px;
+            span{
+                color: $white;
+            }
+            p{
+                color: $white;
+            }
+        }
+        @include media-size('mobile') {
+            margin-top: 10px;
+        }
+    }
+    hr{
+        border-top: 1px solid $mercury;
+         @include media-size('mobile') {
+            margin: 10px auto;
+        }
+    }
+    .apps-row{
+        margin-top: 1em;
+    }
+    .fa-angle-up {
+        font-size: 20px;
+    }
+    .fa-plus,
+    .fa-times {
+        font-size: 14px;
+        font-weight: normal;
+    }
+    .tool-block {
+        .upgrade-divider{
+            border-left: 1px solid #ccc;
+            padding-left: 15px;
+        }
+        a {
+            padding-right: 10px;
+        }
+    }
+    .licences {
+        list-style-type: none;
+        li {
+            float: left;
+            display: inline-block;
+        }
+    }
+    ul {
+        padding: 0px;
+    }
+    .showLicencesTable {
+        padding: 10px;
+        .assignedUserList {
+            list-style-type: none;
+        }
+        .unassignUser {
+            list-style-type: none;
+            li {
+                display: inline-block;
+                .confirm {
+                    background-color: #333;
+                    padding: 5px 10px;
+                }
+                .cancel {
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+
+    .cancelbox {
+        padding: 5px 25px;
+    }
+}

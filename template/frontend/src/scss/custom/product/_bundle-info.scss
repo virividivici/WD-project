@@ -1,0 +1,20 @@
+/******************Bundle Info modules********************/
+.bundle-info-module {
+	padding: 50px 0;
+	.bundle-info {
+		margin: 20px auto;
+		padding: 15px;
+		background-color: $white;
+
+		img {
+			margin-bottom: 30px;
+		}
+		p {
+			margin-bottom: 30px;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

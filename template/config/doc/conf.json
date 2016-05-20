@@ -1,0 +1,19 @@
+{
+	"source": {
+		"include": ["./frontend/core/js/modules", "./frontend/src/js", "./frontend/readme.md"]
+	},
+	"opts": {
+		"template": "./config/doc/template",
+		"encoding": "utf8",
+		"destination": "./docs/frontend/",
+		"recurse": true
+	},
+	"plugins": [
+		"./node_modules/jsdoc/plugins/markdown",
+		"./config/doc/plugins/ngdoc"
+	],
+	"templates": {
+		"cleverLinks": true,
+		"monospaceLinks": true
+	}
+}

@@ -1,0 +1,57 @@
+/******************Cross sell / upsell module********************/
+.cross-sell-module {
+	.cross-sell-title{
+		p {
+			font-size: $font-h2-size;
+			margin: 0 0 30px;
+		}
+	}
+	.cross-sell-body {
+		padding: 0px;
+		h2{
+			font-size: $font-h3-size;
+		}
+		p {
+			margin-bottom: 35px;
+		}
+	}
+}
+.up-sell {
+	.p-title{
+		margin-bottom: 70px;
+		@include media-size('mobile') {
+			margin-bottom: 0;
+		}
+		p{
+			font-size: $font-h2-size;
+		}
+	}
+	.product {
+		text-align: center;
+		.img-responsive{
+			margin-left: auto;
+			margin-right: auto;	
+		}
+		h2 {
+			margin: 20px 0 10px;
+		}
+	}
+	.add-plus {
+		&:after{
+			content: "+";
+			font-family: 'Alegreya Sans', sans-serif;
+			font-weight: 100;
+			font-size: 80px;
+		    position: absolute;
+			top: 15px;
+			right: 0px;
+			@include media-size('mobile') {
+    			position: relative;
+			}
+		}
+	}
+
+	a {
+		margin-top: 30px;
+	}
+}

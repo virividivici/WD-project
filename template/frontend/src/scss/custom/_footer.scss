@@ -1,0 +1,83 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 250px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 186px;
+    background-color: $mine-shaft;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    span {
+        color: $white;
+    }
+    a {
+    	font-family: Arial;
+    	padding-left: 25px;
+    	padding-right: 25px;
+        color: $white;
+        font-size: 14px;
+        &:last-of-type {
+            padding-left: 0;
+        }
+    }
+    p {
+        color: $white;
+        font-size: 14px;
+    }
+    .email {
+    	padding-left: 0px;
+    	padding-right: 0px;
+        text-decoration: underline;
+    }
+    .footer-copy {
+    	margin-right: 50px;
+    }
+    .callback {
+        a {
+            padding: 0;
+        }
+    }
+}
+@media(max-width:769px) {
+    footer {
+        height: 210px;
+        color: $white;
+    }
+}
+@media(max-width:767px) {
+	body {
+		margin-bottom: 0;
+	}
+	footer {
+        position: relative;
+        height: auto;
+		padding-top: 10px;
+		padding-bottom: 25px;
+        margin-top: 50px;
+		a {
+			padding-left: 15px;
+			padding-right: 15px;
+            padding-bottom: 5px;
+		}
+		.mobile-number {
+			font-size: 18px;
+			color: $mtn-yellow;
+		}
+	}
+}
+@media(max-width:767px) {
+    footer {
+        margin-top: 0;
+        padding-top: 35px;
+    }
+}

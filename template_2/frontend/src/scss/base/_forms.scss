@@ -1,0 +1,409 @@
+/*
+
+    Forms
+
+*/
+
+.form-control[readonly] {
+    background-color: $readonly-inputtext !important;
+    border: 0px !important;
+    box-shadow: inset 0 0px 0px !important;
+
+}
+
+
+form {
+
+    .row {
+        // margin: 0;
+    }
+
+    label,
+    .label {
+        font-family: $font-secondary-bold;
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 0;
+
+        a {
+            border-bottom: 0;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: normal;
+        }
+        a.links-border-bottom{
+             border-bottom: 1px solid $brand-primary;
+             &:hover{
+                border-color: $gray-dark;
+             }
+        }
+
+
+    }
+
+    label {
+        font-size: 13px;
+        letter-spacing: -0.4px;
+        margin-bottom: 3px;
+    }
+
+    h2 {
+        text-transform: none;
+        margin-bottom: 8px;
+    }
+
+    .btn.btn-primary {
+        margin: 0;
+        margin-top: 5px;
+    }
+
+    .btn.btn-secondary {
+        margin-left: 0;
+    }
+
+}
+
+form + form {
+    // margin-top: 20px;
+}
+
+.form-group {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 21px;
+}
+
+
+.input-lg {
+    font-size: 14px;
+    font-weight: normal;
+    padding-left: 18px;
+    @include border-radius(3px);
+}
+
+/***********
+    Checkbox and radios
+************/
+
+.checkbox,
+.radio {
+    position:relative;
+    margin-bottom:0.5em;
+    line-height:20px;
+    padding-left: 0;
+    margin-top: 4px;
+    margin-bottom: 2px;
+
+    label {
+        font-size: 14px;
+        cursor: pointer;
+    }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    position:absolute;
+    width:20px;
+    height:20px;
+    /* Reset anything that could peek out or interfere with dimensions */
+    overflow:hidden;
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    opacity:0;
+    cursor: pointer;
+}
+
+
+input[type="checkbox"] + label:before,
+input[type="radio"] + label:before {
+    display:inline-block;
+    width: 22px;
+    height: 22px;
+    margin-right: 14px;
+    background-color: $brand-light-background;
+    content:" ";
+    vertical-align: top;
+    font-family: $font-icons;
+    font-size: 14px;
+    line-height: 15px;
+    color: $gray-dark;
+    text-align: center;
+    border: 1px solid $brand-light-background;
+    box-shadow: 0px 0px 0px 2px $gray-light;
+    cursor: hand;
+}
+input[type="radio"] + label:before {
+    @include border-radius(50%);
+    border: 6px solid $brand-light-background;
+    margin-top: -3px;
+    margin-left: 1px;
+}
+input[type="radio"]:focus + label:before {
+    box-shadow: 0px 0px 0px 2px $gray-light;
+}
+
+input[type="radio"]:checked + label:before {
+    background-color: $gray-dark;
+}
+input[type="checkbox"] + label:before {
+    content:" ";
+    background-color: $brand-light-background;
+    margin-top: -3px;
+    margin-left: 1px;
+    font-size: 14px;
+    line-height: 23px;
+    cursor: pointer;
+    color: $brand-primary;
+}
+input[type="checkbox"]:disabled + label:before{
+    background-color: $input-bg-disabled;
+}
+input[type="checkbox"]:focus + label:before {
+    box-shadow: 0px 0px 0px 2px $gray-light;
+}
+input[type="checkbox"]:checked + label:before {
+    content: "#{$icon-tick}";
+}
+
+.lt-ie9{
+
+    .checkbox,
+    .radio {
+        margin-bottom: 0;
+    }
+
+    input[type="checkbox"] + label:before,
+    input[type="radio"] + label:before {
+        display: none;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"]{
+        position: relative;
+        opacity: 1;
+        width: auto;
+        height: auto;
+    }
+    input[type="radio"]{
+        margin-left:1px;
+        margin-right:3px;
+    }
+}
+
+// Inline versions
+.radio-inline {
+    display: inline-block;
+    margin-top: 0;
+
+    & + .radio-inline {
+        margin-left: 30px;
+    }
+
+    input[type="radio"] {
+        margin-left: 0;
+    }
+}
+
+
+// Selects
+.selectWrap {
+    position: relative;
+    height: 46px;
+
+    .input-lg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 1px solid $gray-light;
+        padding-left: 11px;
+        line-height: 2;
+        width: 100%;
+        overflow:hidden;
+        padding-right: 40px;
+
+        span {
+            position: absolute;
+            right: 0;
+            padding: 4px 14px 0;
+            border-left: 1px solid $gray-light;
+            top: 11px;
+            line-height: 19px;
+
+        }
+    }
+
+    select {
+        opacity: 0;
+        cursor: pointer;
+    }
+    span.focused{
+        border-color: #66afe9;
+        outline: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    }
+    span.disabled{
+        background-color: $input-bg-disabled;
+        color: $input-bg-disabled;
+
+    }
+    .errorStyleOverride{
+        display: inline-block;
+        color: $brand-error;
+        font-size: 12px;
+        max-width: 95%;
+        vertical-align: middle;
+        margin-bottom: 0;
+    }
+}
+
+.switch {
+    padding-left: 38px;
+}
+
+
+/*
+
+    Inline Form elements
+
+*/
+
+.form-inline {
+
+    .form-group {
+        width: 100%;
+    }
+
+    .form-control {
+        margin-top: -8px;
+        width: 100%;
+    }
+
+    .selectWrap {
+        margin-top: -8px;
+    }
+}
+
+
+/*
+
+    Errors
+
+*/
+
+form {
+    .error {
+
+        label,
+        .error {
+            color: $brand-error;
+        }
+
+        .form-control {
+            border-color: $brand-error;
+            background-color: $brand-error-light;
+        }
+
+        .error {
+            font-size: 12px;
+
+            @include at-least($screen-sm-min) {
+                margin-top: 32px;
+            }
+        }
+        .selectWrap span.error{
+            margin-top: 0;
+            font-size: 14px;
+            color: $brand-error;
+            border-color: $brand-error;
+            .icon-Down{
+                border-color: $brand-error;
+            }
+        }
+    }
+}
+
+.sinleLineInput{
+    margin-top:10px; 
+    margin-bottom:10px;
+}
+
+
+/* invite user form fix layout*/
+
+@media (min-width: 769px) {
+
+    .inviteForm{
+        
+        .col-sm-3{
+            width: 24%;
+        }
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    .inviteForm{
+        
+        .input-lg{
+            font-size: 13px;
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    
+    .inputInviteformLabel{
+        .col-sm-3{
+            width: 24%;
+        }
+    }
+}
+
+
+
+.inviteForm{
+    
+    .col-sm-1{
+        padding-left: 0;
+        width: 2.3%;
+    }
+}
+
+@media (min-width: 767px) {
+    
+    .inviteForm{
+        .col-sm-3{
+            width: 24%;
+        }
+    }
+}
+
+
+@media (min-width: 767px) {
+    
+    .inviteForm{
+        .col-sm-3{
+            width: 24%;
+        }
+    }
+}
+
+.inviteUserRemoveButton {
+    display: none;
+}
+
+@media (max-device-width: 736px) {
+    .inviteUserRemoveButton {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .delete-people {
+    width: 100px !important;
+    }
+}
+

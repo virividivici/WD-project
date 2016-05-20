@@ -1,0 +1,54 @@
+/*
+
+    Setup
+
+ */
+
+
+/*
+
+    Variable overrides
+
+ */
+
+@import "tenant-vars-ee";
+
+@import "bootstrap/variables";
+@import "base/bootstrap-vars";
+@import 'base/bootstrap-src';
+@import 'compass/css3';
+
+
+@import 'base/media-queries';
+
+@import 'base/custom-mixins';
+
+@import 'base/typography';
+
+
+
+/*
+
+    Tenant overrides - EE
+
+ */
+
+    @import 'tenant-ee';
+    @import 'font-awesome/font-awesome';
+
+
+    @import 'base/scaffolding';
+
+  
+
+    @import 'base/ie';
+
+  
+
+/***********************************************
+    // STYLE GUIDE - REMOVE BEFORE RELEASE
+***********************************************/
+
+  
+
+    @import 'base/helpers';

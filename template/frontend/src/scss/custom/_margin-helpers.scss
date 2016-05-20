@@ -1,0 +1,114 @@
+/* margin classes */
+
+.margin-top-10 {
+	margin-top:10px;
+}
+.margin-bottom-10 {
+	margin-bottom:10px
+}
+
+.margin-top-15 {
+	margin-top:15px;
+}
+.margin-bottom-15 {
+	margin-bottom:15px;
+}
+.margin-bottom-20 {
+    margin-bottom:20px;
+}
+.margin-top-30 {
+    margin-top: 30px;
+}
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+.margin-top-70 {
+    margin-top: 70px;
+    @include media-size('mobile') {
+        margin-top: 0;
+    }
+}
+
+/* no margin classes */
+
+.no-margin {
+    margin: 0;
+}
+
+.no-margin-left {
+    margin-left: 0;
+}
+
+.no-margin-right {
+    margin-right: 0;
+}
+
+.no-margin-top {
+    margin-top: 0;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+/* padding classes */
+
+.padding-top-20 {
+    padding-top: 20px;
+}
+.padding-bottom-20 {
+    padding-bottom: 20px;
+}
+.padding-30 {
+    padding: 30px;
+}
+
+/* no padding classes */
+
+.no-padding {
+    padding: 0;
+}
+
+.no-padding-left {
+    padding-left: 0;
+}
+
+.no-padding-right {
+    padding-right: 0;
+}
+
+.no-padding-top {
+    padding-top: 0;
+}
+
+.no-padding-bottom {
+    padding-bottom: 0;
+}
+
+
+
+/* add more margin classes */
+.margin-top-330 {
+    margin-top: 330px;
+} 
+
+.margin-bottom-minus-30 {
+    margin-bottom: -30px;
+}
+
+.margin-top-minus-25 {
+    margin-top: -25px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-26 {
+    margin-bottom: 26px;
+}
+
+.margin-top-bottom {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}

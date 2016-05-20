@@ -1,0 +1,7 @@
+body {padding: 0;margin: 0;display: flex;flex-direction: column;}
+body * {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;/*outline: 1px dotted rgba(0, 0, 0, .35);background-color: rgba(0, 0, 0, .05);*/}
+
+section#wrapper {float: none;margin: 0;padding: 0;display: flex;flex-direction: row-reverse;border: none;}
+section#main {float: none;margin: 0;width:auto;flex:7;border: none;}
+nav#mainnav {float: none;margin: 0;width:auto;flex:3;}
+footer#sitefooter {float: none;margin: 0;flex:1;}

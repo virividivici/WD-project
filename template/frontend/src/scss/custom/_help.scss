@@ -1,0 +1,22 @@
+/* Help */
+
+.help-menu-area {
+    ul {
+        padding-left: 16px;
+    }
+    .active-menu {
+        color: $grey;
+    }
+}
+.help-accordion-area {
+    .help-link {
+        &:hover {
+            cursor: pointer;
+        } 
+    }
+    .selected {
+        a {
+           color: $grey;
+        }
+    }
+}

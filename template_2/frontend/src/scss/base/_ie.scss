@@ -1,0 +1,84 @@
+/*
+
+    IE8  CSS
+
+ */
+
+.lt-ie9 {
+
+    .dark{
+
+        //background:red;
+    }
+
+    #invituser select {
+        width:123px;
+        overflow:hidden;
+        margin-top:0px;
+        border:1px solid #ccc;
+        padding:10px 10px 10px;
+        
+    }
+    .remove-user{
+        margin-top:0px;
+    }
+    .icon-Cross_16x16{
+        float:left;
+        margin-left:20px;
+    }
+
+    form.actionValue{ 
+
+        select{
+
+        width:125px;
+        overflow:hidden;
+        margin-top:0px;
+        border:1px solid #ccc;
+        padding:10px 10px 10px;
+
+        }
+    }
+
+    form.assignLicences {
+
+        select{
+        width:100%;
+        overflow:hidden;
+        margin-top:0px;
+        border:1px solid #ccc;
+        padding:10px 10px 10px;
+
+        }
+
+    }
+
+    form.viewAllLicences{
+
+        select{
+        width:100%;
+        overflow:hidden;
+        margin-top:0px;
+        border:1px solid #ccc;
+        padding:10px 10px 10px;
+
+        }
+
+    }
+
+    form.telesales-dropdown{
+
+        select{
+        width:100%;
+        overflow:hidden;
+        margin-top:0px;
+        border:1px solid #ccc;
+        padding:10px 10px 10px;
+
+        }
+    }
+
+    .sectionWhite{
+        padding:20px;
+    }
+}

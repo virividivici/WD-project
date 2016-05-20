@@ -1,0 +1,34 @@
+<div class="block-table col-sm-12">
+
+    <div class="row bt-head">
+
+        <div class="col-sm-3"><h5>Customer name</h5></div>
+        <div class="col-sm-2"><h5 class="hidden-xs hidden-sm hidden-md">Account number</h5><h5 class="hidden-lg">Account no</h5></div>
+        <div class="col-sm-2"><h5>Company</h5></div>
+        <div class="col-sm-2"><h5>Billing info</h5></div>
+        <div class="col-sm-3 cta"><h5>Masquerade as user</h5></div>
+
+    </div>
+
+    test
+
+    <div class="row bt-row" ng-repeat="result in searchResults">
+
+        <a href="#" class="tertiaryLink cta col-xs-12 hidden-sm">item {{ result.id }}</a>
+
+        <div class="col-xs-12 col-sm-3"><p class="title">{{ result.name }}</p></div>
+
+        <p class="bt-label col-xs-3 hidden-sm">Account no</p>
+        <div class="col-xs-9 col-sm-2"><p>{{ result.accountNo }}</p></div>
+
+        <p class="bt-label col-xs-3 hidden-sm">Company</p>
+        <div class="col-xs-9 col-sm-2"><p>{{ result.company }}</p></div>
+
+        <p class="bt-label col-xs-3 hidden-sm">Billing info</p>
+        <div class="col-xs-9 col-sm-2"><p>{{ result.billingInfo }}</p></div>
+
+        <div class="col-xs-12 col-sm-3 cta"><a href="#masquerade-as-user?u={{ result.id }}" class="btn btn-primary">Continue</a></div>
+
+    </div>
+
+</div>

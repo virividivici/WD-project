@@ -1,0 +1,55 @@
+/*
+
+    Scaffolding
+
+ */
+
+/*@media screen and (max-width: $screen-xs-max) {
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+}*/
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+}
+
+
+section,
+.section {
+    position: relative;
+    background-color: $brand-light-text;
+    padding-bottom: 42px;
+
+    &.dark {
+        background-color: $brand-bg;
+    }
+}
+
+.container {
+    padding: 0 $grid-gutter-width;
+}
+
+.pageSection {
+    margin-left: -24px;
+    margin-right: -24px;
+    background-color: $brand-light-text;
+    padding: 22px 24px;
+    position: relative;
+
+    &.dark {
+        background-color: $brand-bg;
+    }
+}
