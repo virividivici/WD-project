@@ -5,24 +5,8 @@ module.exports = function(grunt) {
   // Application modules to use.
 
   var app_modules = [
-    'accordion',
     'forms',
-    'video',
-    'header-nav',
-    'tele-search',
-    'manage-users',
-    'invite-users',
-    'tab-accordion',
-    'product-grid',
-    'drawer-box',
-    'voucher',
     'provisioning',
-    'payment',
-    'manage-products',
-    'view-licences',
-    'voucher-codes',
-    'welcome-page',
-    'lead-referral',
     'platform'
   ]
 
@@ -35,22 +19,19 @@ module.exports = function(grunt) {
     'src/js/vendor/jquery.min.js',
     'src/js/vendor/underscore-min.js',
     'src/js/vendor/angular.min.js',
+    'src/js/vendor/angular-route.min.js',
     'src/js/vendor/angular-sanitize.min.js',
     'src/js/vendor/ui-bootstrap-custom-0.10.0.js',
     'src/js/vendor/ui-bootstrap-custom-helpers.js',
-    'src/js/vendor/ui-bootstrap-custom-tpls-0.10.0.js',
-    'src/js/vendor/bootstrap-carousel-tab-modal-jquery.min.js'
+    'src/js/vendor/ui-bootstrap-custom-tpls-0.10.0.js'
   ]
 
 
   var js_files = [
-    'src/js/vendor/jquery.konakart-7.1.1.1.min.js',
-    'src/js/vendor/postcodeAnywhere.js',
-    'src/js/vendor/crafty_postcode_big.class.js',
-    'src/js/vendor/cookie-policy.js',
     'src/js/plugins.js',
 
     'src/js/app/common/saasModule.js',
+    'src/js/app/common/config/*.js',
     'src/js/app/common/services/*.js',
     'src/js/app/common/controllers/*.js',
     'src/js/app/common/directives/*.js'
