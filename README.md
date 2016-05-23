@@ -1,8 +1,9 @@
 # WD-project
 
 #Demo
-find demo here [http://zoe-azhdari.com/weather-app/](here)
-for local : run http-server on app forlder and the access from localhost:8080
+Find demo here [http://zoe-azhdari.com/weather-app/](here)
+
+For local : run http-server on app forlder and the access from localhost:8080
 
 Front End Setup
 ===============
