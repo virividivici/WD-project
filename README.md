@@ -1,4 +1,9 @@
 # WD-project
+
+#Demo
+find demo here [http://zoe-azhdari.com/weather-app/](here)
+for local : run http-server on app forlder and the access from localhost:8080
+
 Front End Setup
 ===============
 
@@ -16,4 +21,6 @@ Install the 2.1.x version of Ruby using the installer from [http://rubyinstaller
 
 Running the project
 -------------------
-
+run npm install on frontend folder
+then run grunt on frontend folder
+for local : run http-server on app forlder and the access from localhost:8080
