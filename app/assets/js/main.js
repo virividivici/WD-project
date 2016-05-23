@@ -106,7 +106,7 @@ angular.module('forecast')
         $scope.weatherForcast = {};
         $scope.apikey= "apikey=d2713e5fdebd4d8cc3d3498bd386444d";
         $scope.apilink= "http://api.openweathermap.org/data/2.5/forecast/daily?&units=metric&cnt=6"; // &id=2643743&
-        //$scope.partialUrl = '';
+        $scope.partialUrl = 'assets/partials/weather.html';
 
     
         $scope.lookUpWeatherForcast = function(locationId) {
@@ -139,8 +139,6 @@ angular.module('forecast')
 
             //$scope.partialUrl = 'assets/partials/weather.html';
             $scope.weatherForcast = weather;
-            var poop = getNextDayes(5);
-            console.log('poop', poop)
         }  
 
 
